@@ -7,11 +7,19 @@
       "questions": [
         {
           "label": "What services do you offer?",
-          "content": "I offer a range of services including web design, web development, branding, and photography. I can also help with SEO and social media marketing."
+          "content": "I offer custom web development: showcase sites, e-commerce (Prestashop, WooCommerce), business applications, API integration and AI-assisted automation. I also support clients in getting to grips with their tools."
         },
         {
-          "label": "Can you teach me how to make a website?",
-          "content": "I don't offer courses at the moment, but I can recommend resources and advice to help you get the most out of your learning."
+          "label": "Concretely, how do you work with your clients?",
+          "content": "I act as an interpreter between their needs and the expanded possibilities of AI-assisted development. A client arrives with a vision — often vague, sometimes contradictory. My job is to clarify those needs and structure them so the AI can produce exactly what's expected. Then I inspect, validate, and refine. My role often spills firmly into quality control — it's an iterative process where the human must keep their eyes open and hands on the wheel."
+        },
+        {
+          "label": "Do you work with AI?",
+          "content": "Yes. I speak three languages fluently: the client's business needs, the various web disciplines, and the language of AI. My role is to make the AI understand not just what we want, but why we want it, in what context, with what constraints. It's a constant dialogue where I inspect, reformulate, and validate."
+        },
+        {
+          "label": "What kind of clients do you work with?",
+          "content": "I work with freelancers, SMEs and project owners looking for a trusted technical partner. I prefer projects aligned with values of transparency, usefulness and honesty."
         }
       ]
     },
@@ -20,19 +28,32 @@
       "questions": [
         {
           "label": "How much does a project cost?",
-          "content": "The cost of a project depends on many factors, such as the size of the project, the features, the development time, etc. The initial amount of my web services starts at 2000€, with an average between 3000€ and 10000€. For any other design or consulting service, I usually charge 450€ per day."
+          "content": "Every project is different. I work on a quote basis, after an initial discussion to understand your needs. Get in touch to talk it over."
         },
         {
-          "label": "How does payment work for a project?",
-          "content": "I ask for a 40% deposit before starting a project, and the remaining 60% after successful delivery. I accept payments by bank transfer, PayPal, etc..."
+          "label": "How does payment work?",
+          "content": "I ask for a deposit before starting, with the balance due on delivery. Terms are set out in the quote and contract."
         },
         {
-          "label": "How long does a project take?",
-          "content": "It's difficult to give an exact estimate, as each project is different, but the majority of my past work has taken between 2 weeks and 2 months."
+          "label": "Are you available for maintenance?",
+          "content": "Yes, I handle maintenance and ongoing development of projects I've built, and can take over existing projects depending on their state."
+        }
+      ]
+    },
+    {
+      "title": "Vision & method",
+      "questions": [
+        {
+          "label": "How has your profession evolved over two decades?",
+          "content": "Under the pressure of small revolutions that force us to relearn how to do our work. I started when the web was just finding its feet — the war between ASP and PHP, the dot-com bubble, the JS revolution where the frontend decided it could do backend too. And now AI, which offers to write the code for us. It can fill every role, as long as someone knows when it's working badly. My job has taken a new turn: I'm a conductor between AI and human needs."
         },
         {
-          "label": "Do you offer discounts?",
-          "content": "I offer a 15% discount for students and non-profit organizations."
+          "label": "How do you stay in control given the speed of AI?",
+          "content": "That's THE challenge! AI is like a brilliant but hyperactive intern — it comes back every 5 minutes with finished work. My solution? Paper. Yes, in 2025, writing still means something. It's my anchor. When I read printed specifications, I find the natural rhythm of human thought again. I can imagine, structure, and reflect without being rushed by the speed of the machine."
+        },
+        {
+          "label": "How do you position yourself ethically with AI?",
+          "content": "It's heartbreaking. Jacques Ellul warned against the false neutrality of technology. Every prompt has a carbon cost, every automation has social implications. My profession has no future without AI, and I'm forced to embrace it — but I see it as a professional tool, and I avoid using it in my personal life."
         }
       ]
     },
@@ -40,12 +61,16 @@
       "title": "Personal",
       "questions": [
         {
-          "label": "What do you enjoy most about this work?",
-          "content": "I love learning new things and being able to create just about anything from scratch, creating beautiful things that people will use and appreciate."
+          "label": "What sets you apart from other developers?",
+          "content": "20 years of practice across very different technologies, a business mindset (not just technical), and an honest approach: I say what's feasible, in what timeframe, and why."
         },
         {
-          "label": "Hobbies outside of work?",
-          "content": "I love what I do, so I usually spend a lot of time working on personal projects, photography, etc. I'm also a big sports fan. I often go to the gym and I recently started climbing!"
+          "label": "What recharges you outside of the digital world?",
+          "content": "Switching off screens is already a form of recharging. I don't limit myself to development: I managed the construction of my own home and developed shared therapy office spaces. These physical projects reconnect me to reality and decision-making. And of course — leisure, exercise, contemplation."
+        },
+        {
+          "label": "Advice for those who want to work with AI without getting lost in it?",
+          "content": "Get interested in neuroscience and brain plasticity. Use the time saved by new tools to learn new skills, set yourself new challenges you won't delegate to the machine. The more we're helped by machines, the more we must protect our own value — for our health, for our mental wellbeing."
         }
       ]
     }

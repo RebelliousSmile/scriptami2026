@@ -15,9 +15,10 @@ defineProps({
     class="flex shrink-0 items-center"
     aria-label="Go back to home page"
   >
-    <UIcon
-      name="custom:maison-hochard"
+    <NuxtImg
+      src="/logo.png"
       class="size-8"
+      alt="Scriptami logo"
     />
     <span
       v-if="isText"

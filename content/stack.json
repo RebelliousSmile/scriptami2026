@@ -11,14 +11,24 @@
       "icon": "custom:vue"
     },
     {
-      "name": "Nest",
-      "link": "https://nestjs.com/",
-      "icon": "custom:nest"
+      "name": "WordPress",
+      "link": "https://wordpress.org/",
+      "icon": "custom:wordpress"
+    },
+    {
+      "name": "Prestashop",
+      "link": "https://www.prestashop.com/",
+      "icon": "custom:prestashop"
     },
     {
       "name": "TailwindCSS",
       "link": "https://tailwindcss.com/",
       "icon": "custom:tailwind"
+    },
+    {
+      "name": "Bootstrap",
+      "link": "https://getbootstrap.com/",
+      "icon": "custom:bootstrap"
     },
     {
       "name": "Prisma",
@@ -31,64 +41,24 @@
       "icon": "custom:vercel"
     },
     {
-      "name": "Linear",
-      "link": "https://linear.app/",
-      "icon": "custom:linear"
+      "name": "Bitwarden",
+      "link": "https://bitwarden.com/",
+      "icon": "custom:bitwarden"
     },
     {
-      "name": "Arc",
-      "link": "https://arc.net/",
-      "icon": "custom:arc"
+      "name": "GitHub",
+      "link": "https://github.com/",
+      "icon": "custom:github"
     },
     {
-      "name": "Raycast",
-      "link": "https://raycast.com/",
-      "icon": "custom:raycast"
+      "name": "GitLab",
+      "link": "https://gitlab.com/",
+      "icon": "custom:gitlab"
     },
     {
-      "name": "Notion",
-      "link": "https://www.notion.so/",
-      "icon": "custom:notion"
-    },
-    {
-      "name": "Cron",
-      "link": "https://calendar.cron.com/",
-      "icon": "custom:cron"
-    },
-    {
-      "name": "Spark",
-      "link": "https://sparkmailapp.com/",
-      "icon": "custom:spark"
-    },
-    {
-      "name": "1Password",
-      "link": "https://1password.com/",
-      "icon": "custom:onepassword"
-    },
-    {
-      "name": "Fig",
-      "link": "https://fig.io/",
-      "icon": "custom:fig"
-    },
-    {
-      "name": "Figma",
-      "link": "https://www.figma.com/",
-      "icon": "custom:figma"
-    },
-    {
-      "name": "Photoshop",
-      "link": "https://www.adobe.com/products/photoshop.html",
-      "icon": "custom:photoshop"
-    },
-    {
-      "name": "Illustrator",
-      "link": "https://www.adobe.com/products/illustrator.html",
-      "icon": "custom:illustrator"
-    },
-    {
-      "name": "Lightroom",
-      "link": "https://www.adobe.com/products/photoshop-lightroom.html",
-      "icon": "custom:lightroom"
+      "name": "Claude",
+      "link": "https://claude.ai/",
+      "icon": "custom:claude"
     }
   ]
 }

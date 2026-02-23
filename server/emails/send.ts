@@ -8,11 +8,11 @@ export default defineEventHandler(async (event: H3Event) => {
     const body = (await readBody(event))
     const { email, subject, message, phone, fullname } = body
     return await resend.emails.send({
-      from: 'HR Folio <contact@hrcd.fr>',
-      to: ['contact@hrcd.fr'],
-      subject: 'Nouveau message de HR Folio',
+      from: 'Scriptami <ecrire.a@scriptami.com>',
+      to: ['ecrire.a@scriptami.com'],
+      subject: 'Nouveau message de Scriptami',
       html: `
-      <p>Un nouveau message a été envoyé depuis le formulaire de contact de HR Folio.</p>
+      <p>Un nouveau message a été envoyé depuis le formulaire de contact de Scriptami.</p>
       <p>Voici les détails du message :</p>
       <ul>
         <li>Nom : ${fullname}</li>

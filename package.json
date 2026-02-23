@@ -1,6 +1,6 @@
 {
   "name": "canvas-template",
-  "author": "HugoRCD",
+  "author": "Scriptami",
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
@@ -30,14 +30,14 @@
     "nuxt": "4.3.0",
     "resend": "6.9.1",
     "sitemap": "9.0.0",
-    "nuxt-studio": "1.2.0",
     "ufo": "^1.6.3",
     "vue-sonner": "2.0.9"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "1.13.0",
     "automd": "0.4.3",
-    "eslint": "9.39.2"
+    "eslint": "9.39.2",
+    "playwright": "^1.58.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

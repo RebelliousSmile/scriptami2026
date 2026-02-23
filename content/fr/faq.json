@@ -1,38 +1,59 @@
 {
   "title": "FAQ",
-  "subtitle": "Questions qu'on me pose souvent",
+  "subtitle": "Ce qu'on me demande souvent",
   "faqQuestions": [
     {
       "title": "Services",
       "questions": [
         {
-          "label": "Quels services je propose?",
-          "content": "Je propose principalement des services de développement web et mobile, mais aussi de design et de consulting web. Mon objectif est de vous aider à créer des produits de qualité, qui répondent à vos besoins et à ceux de vos utilisateurs."
+          "label": "Quels services proposez-vous ?",
+          "content": "Je propose du développement web sur mesure : sites vitrines, e-commerce (Prestashop, WooCommerce), applications métier, intégration d'API et automatisation assistée par IA. J'accompagne aussi les clients dans la prise en main de leurs outils."
         },
         {
-          "label": "Peux-tu m'aider à apprendre à faire un site web?",
-          "content": "Je ne propose pas de cours pour le moment, mais je peux vous recommander des ressources et conseils pour vous orienter au mieux dans votre apprentissage."
+          "label": "Concrètement, comment travaillez-vous avec vos clients ?",
+          "content": "Je fonctionne comme un interprète entre leurs besoins et les possibilités démultipliées de codage avec l'IA. Un client arrive avec une vision, souvent floue, parfois contradictoire. Mon travail consiste à clarifier ces besoins, à les structurer pour que l'IA puisse produire exactement ce qui est attendu. Puis j'inspecte, je valide, j'affine. Mon métier déborde parfois franchement sur le contrôle qualité — c'est un processus itératif où l'humain doit garder l'œil ouvert et la main sur le gouvernail."
+        },
+        {
+          "label": "Vous travaillez avec l'IA ?",
+          "content": "Oui. Je parle couramment trois langues : celle du client avec ses besoins business, celle des différents métiers du web, et celle de l'IA. Mon rôle, c'est de faire comprendre à l'IA non seulement ce qu'on veut, mais pourquoi on le veut, dans quel contexte, avec quelles contraintes. C'est un dialogue constant où j'inspecte, je reformule, je valide."
+        },
+        {
+          "label": "Avec quel type de client travaillez-vous ?",
+          "content": "Je travaille avec des indépendants, des PME et des porteurs de projet qui cherchent un partenaire technique de confiance. Je préfère les projets alignés avec des valeurs de transparence, d'utilité et d'honnêteté."
         }
       ]
     },
     {
-      "title": "Tarification",
+      "title": "Tarifs",
       "questions": [
         {
-          "label": "Combien coûte un projet?",
-          "content": "Le coût d'un projet dépend de nombreux facteurs, tels que la taille du projet, les fonctionnalités, le temps de développement, etc. Le montant initial de mes services web commence à 2000€, avec une moyenne comprise entre 3000€ et 10000€. Pour tout autre service de design ou de consulting, je facture généralement 450€ par jour."
+          "label": "Combien coûte un projet ?",
+          "content": "Chaque projet est différent. Je travaille sur devis, après un premier échange pour comprendre vos besoins. Contactez-moi pour en discuter."
         },
         {
-          "label": "Comment fonctionne le paiement pour un projet?",
-          "content": "Je demande un acompte de 40% avant de commencer un projet, et les 60% restants après une livraison réussie. J'accepte les paiements par virement bancaire, PayPal, etc..."
+          "label": "Comment fonctionne le paiement ?",
+          "content": "Je demande un acompte avant de démarrer, avec le solde à la livraison. Les modalités sont précisées dans le devis et le contrat."
         },
         {
-          "label": "Combien de temps dure un projet?",
-          "content": "Il est difficile de donner une estimation précise, car chaque projet est différent, mais la majorité de mes travaux passés ont pris entre 2 semaines et 2 mois."
+          "label": "Êtes-vous disponible pour de la maintenance ?",
+          "content": "Oui, j'assure la maintenance et le développement continu des projets que j'ai réalisés, et je peux reprendre des projets existants selon leur état."
+        }
+      ]
+    },
+    {
+      "title": "Vision & méthode",
+      "questions": [
+        {
+          "label": "Comment votre métier a-t-il évolué en deux décennies ?",
+          "content": "Sous la pression de petites révolutions, qui nous obligent à apprendre à faire notre travail autrement. J'ai commencé quand internet balbutiait — la guerre entre ASP et PHP, la bulle web, la révolution JS où le front s'est dit qu'il pouvait faire du back. Et maintenant l'IA, qui propose d'écrire le code à notre place. Elle peut remplacer tous les rôles, à condition qu'on sache quand elle travaille mal. Mon métier a pris un nouveau tournant : je suis chef d'orchestre entre l'IA et les besoins humains."
         },
         {
-          "label": "Est-ce que je propose des réductions?",
-          "content": "J'offre une réduction de 15% pour les étudiants et les organisations à but non lucratif."
+          "label": "Comment gardez-vous le contrôle face à la vitesse de l'IA ?",
+          "content": "C'est LE défi ! L'IA est comme un stagiaire brillant mais hyperactif — elle revient toutes les 5 minutes avec du travail terminé. Ma parade ? Le papier. Oui, en 2025, écrire a encore un sens. C'est mon ancre. Quand je lis des spécifications imprimées, je retrouve le rythme naturel de la pensée humaine. Je peux imaginer, structurer, réfléchir sans être bousculé par la vitesse de la machine."
+        },
+        {
+          "label": "Comment vous positionnez-vous éthiquement face à l'IA ?",
+          "content": "C'est un crève-cœur. Jacques Ellul a mis en garde contre la fausse neutralité de la technologie. Chaque prompt a un coût carbone, chaque automatisation a des implications sociales. Mon métier aujourd'hui n'a pas d'avenir sans l'IA, et je suis obligé d'y adhérer — mais je la vois comme un outil professionnel, et évite de m'en servir à titre personnel."
         }
       ]
     },
@@ -40,12 +61,16 @@
       "title": "Personnel",
       "questions": [
         {
-          "label": "Qu'est-ce que tu préfères dans ce travail?",
-          "content": "J'adore apprendre de nouvelles choses et pouvoir créer à peu près tout à partir de rien, créer de belles choses que les gens utiliseront et apprécieront."
+          "label": "Qu'est-ce qui vous distingue des autres développeurs ?",
+          "content": "20 ans de pratique sur des technologies très différentes, une vision métier (pas seulement technique), et une approche honnête : je dis ce qui est faisable, dans quel délai, et pourquoi."
         },
         {
-          "label": "Des passions en dehors du travail?",
-          "content": "J'adore ce que je fais, donc je passe généralement beaucoup de temps à travailler sur des projets personnels, la photographie, etc. Je suis aussi un grand accro au sport. Je vais souvent à la salle de sport et j'ai récemment commencé l'escalade !"
+          "label": "Qu'est-ce qui vous ressource en dehors du digital ?",
+          "content": "Couper les écrans est déjà un ressourcement en soi. Je ne me limite pas à développer : j'ai fait construire ma maison et développé des cabinets de soins partagés. Ces projets physiques me font recoller au réel, à la prise de décisions. Et bien sûr les loisirs, l'exercice, la contemplation."
+        },
+        {
+          "label": "Un conseil pour ceux qui veulent travailler avec l'IA sans s'y perdre ?",
+          "content": "Intéressez-vous aux neurosciences, à la plasticité du cerveau. Profitez du temps gagné avec les nouveaux outils pour apprendre de nouvelles compétences, vous donner de nouveaux défis que vous ne déléguerez pas à la machine. Plus nous sommes aidés par les machines, plus nous devons prendre garde à garder notre valeur — pour notre santé, pour notre bien-être mental."
         }
       ]
     }

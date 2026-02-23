@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/seo',
     '@nuxt/content',
-    'nuxt-studio',
     '@nuxt/image',
     '@nuxt/scripts',
     'vue-sonner/nuxt',
@@ -27,7 +26,7 @@ export default defineNuxtConfig({
   css: ['~/assets/style/main.css'],
 
   site: {
-    url: 'https://canvas.hrcd.fr',
+    url: 'https://scriptami.com',
     defaultLocale: 'en',
     indexable: true,
   },
@@ -37,12 +36,7 @@ export default defineNuxtConfig({
     fallback: 'dark',
   },
 
-  content: {
-    preview: {
-      api: 'https://api.nuxt.studio',
-      dev: true,
-    },
-  },
+  content: {},
 
   mdc: {
     highlight: {
@@ -60,10 +54,6 @@ export default defineNuxtConfig({
     },
   },
 
-  routeRules: {
-    // Needed to activate preview on Nuxt Studio
-    '/': { prerender: false },
-  },
 
   experimental: {
     viewTransition: true,
@@ -126,14 +116,4 @@ export default defineNuxtConfig({
     zeroRuntime: true,
   },
 
-  studio: {
-    route: '/admin',
-
-    repository: {
-      provider: 'github',
-      owner: 'HugoRCD',
-      repo: 'canvas',
-      branch: 'main',
-    },
-  },
 })

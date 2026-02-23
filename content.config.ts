@@ -18,8 +18,8 @@ const commonArticleSchema = z.object({
 
 const commonProjectSchema = z.object({
   name: z.string().nonempty(),
-  image: z.string().url(),
-  link: z.string().url(),
+  image: z.string().nonempty(),
+  link: z.string().nonempty(),
   release: z.string().nonempty(),
   date: z.string().nonempty(),
   featured: z.boolean().optional(),

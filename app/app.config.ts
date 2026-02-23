@@ -1,26 +1,26 @@
 export default defineAppConfig({
   global: {
-    meetingLink: 'https://cal.com/hugorcd/15min',
+    meetingLink: 'https://cal.com/francois-xavier-guillois/first',
     available: true,
   },
   profile: {
-    name: 'Hugo Richard',
-    job: 'Frontend Architect and Designer',
-    email: 'contact@hrcd.fr',
-    phone: '(+33) 6 21 56 22 18',
-    picture: 'https://avatars.githubusercontent.com/u/71938701?v=4',
+    name: 'François-Xavier Guillois',
+    job: 'Développeur web indépendant',
+    email: 'ecrire.a@scriptami.com',
+    phone: '(+33) 6 38 05 61 00',
+    picture: '/portrait.jpg',
   },
   socials: {
-    github: 'https://github.com/HugoRCD',
-    twitter: 'https://twitter.com/HugoRCD__',
-    linkedin: 'https://www.linkedin.com/in/hugo-richard-0801',
-    instagram: 'https://www.instagram.com/hugo.rcd_',
-    spotify: 'https://open.spotify.com/user/yuvl0zpp3bpx4hne1ag7huten?si=df7ee2777c0c4fc4',
+    github: 'https://github.com/tnntwister',
+    twitter: '',
+    linkedin: 'https://www.linkedin.com/in/francois-xavier-guillois/',
+    instagram: '',
+    spotify: '',
   },
   seo: {
-    title: 'Canvas a Nuxt portfolio template',
-    description: 'Canvas is a simple but beautiful portfolio template for designers and developers built with Nuxt and Tailwind CSS. Made with ❤️ by HugoRCD',
-    url: 'https://canvas.hrcd.fr',
+    title: 'Scriptami — François-Xavier Guillois',
+    description: 'Développeur web indépendant basé à Rumilly, Haute-Savoie. 20 ans d\'expérience en développement web sur mesure, e-commerce et applications métier.',
+    url: 'https://scriptami.com',
   },
   ui: {
     colors: {
