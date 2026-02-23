@@ -16,20 +16,7 @@ const stack = await queryCollection('stack').first()
         mdc-unwrap="p"
       />
     </h2>
-    <div class="flex justify-center mt-4">
-      <UButton
-        as="a"
-        href="/fxg-cvdevweb-latest.pdf"
-        download
-        target="_blank"
-        icon="lucide:download"
-        variant="outline"
-        size="sm"
-      >
-        {{ $t("global.cv") }}
-      </UButton>
-    </div>
-    <Divider class="mb-8 mt-6" />
+    <Divider class="mb-8 mt-2" />
     <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <AboutProfilePicture />
       <div class="flex flex-col gap-3 sm:ml-4">
@@ -42,6 +29,19 @@ const stack = await queryCollection('stack').first()
             mdc-unwrap="p"
           />
         </div>
+        <div>
+          <UButton
+            as="a"
+            href="/fxg-cvdevweb-latest.pdf"
+            download
+            target="_blank"
+            icon="lucide:download"
+            variant="outline"
+            size="sm"
+          >
+            {{ $t("global.cv") }}
+          </UButton>
+        </div>
       </div>
     </div>
     <div class="flex justify-end -mt-2">
@@ -52,6 +52,19 @@ const stack = await queryCollection('stack').first()
       name="experiences"
       mdc-unwrap="p"
     />
+    <div class="mt-6">
+      <UButton
+        as="a"
+        href="/fxg-cvdevweb-latest.pdf"
+        download
+        target="_blank"
+        icon="lucide:download"
+        variant="outline"
+        size="sm"
+      >
+        {{ $t("global.cv") }}
+      </UButton>
+    </div>
     <Divider class="my-8" />
     <div class="flex flex-col gap-3">
       <div class="mb-6 flex flex-col gap-1">
