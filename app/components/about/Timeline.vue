@@ -13,7 +13,7 @@ defineProps<{
           <span class="text-xs font-mono text-muted">{{ item.date }}</span>
           <div class="size-2.5 rounded-full bg-white/60 ring-2 ring-white/20 ring-offset-2 ring-offset-black" />
         </div>
-        <div v-if="index < items.length - 1" class="w-16 h-px bg-white/25" />
+        <div v-if="index < items.length - 1" class="w-28 h-px bg-white/25" />
       </template>
     </div>
 
