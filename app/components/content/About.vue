@@ -17,7 +17,7 @@ const stack = await queryCollection('stack').first()
       />
     </h2>
     <Divider class="mb-8 mt-2" />
-    <div class="relative flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between pb-28">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <AboutProfilePicture />
       <div class="flex flex-col gap-3 sm:ml-4">
         <h3 class="text-lg">
@@ -29,9 +29,10 @@ const stack = await queryCollection('stack').first()
             mdc-unwrap="p"
           />
         </div>
+        <div class="flex justify-end mt-2">
+          <img src="/quill.svg" class="w-36 h-20 opacity-25 invert pointer-events-none select-none" alt="" aria-hidden="true" />
+        </div>
       </div>
-      <img src="/quill.svg" class="absolute bottom-0 right-0 hidden w-40 h-24 opacity-25 invert sm:block pointer-events-none select-none" alt="" aria-hidden="true" />
-      <img src="/quill.svg" class="absolute bottom-0 -right-2 w-32 h-20 opacity-25 invert sm:hidden pointer-events-none select-none" alt="" aria-hidden="true" />
     </div>
     <Divider class="my-8" />
     <slot
