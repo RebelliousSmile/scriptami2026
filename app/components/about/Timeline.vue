@@ -6,14 +6,16 @@ defineProps<{
 
 <template>
   <div class="flex flex-col gap-6">
-    <!-- Timeline line + dots (desktop) -->
-    <div class="hidden sm:flex items-center w-full">
+    <!-- Timeline line + dots (desktop) — même structure que la rangée de blocs -->
+    <div class="hidden sm:flex items-center gap-2">
       <template v-for="(item, index) in items" :key="'dot-' + index">
-        <div class="flex flex-col items-center gap-1 flex-1">
+        <div class="flex-1 flex flex-col items-center gap-1">
           <span class="text-xs font-mono text-muted">{{ item.date }}</span>
           <div class="size-2.5 rounded-full bg-white/60 ring-2 ring-white/20 ring-offset-2 ring-offset-black" />
         </div>
-        <div v-if="index < items.length - 1" class="flex-1 h-px bg-white/20" />
+        <div v-if="index < items.length - 1" class="w-4 flex items-center">
+          <div class="w-full h-px bg-white/20" />
+        </div>
       </template>
     </div>
 
