@@ -39,7 +39,7 @@ const stack = await queryCollection('stack').first()
       name="experiences"
       mdc-unwrap="p"
     />
-    <div class="mt-8 flex justify-center">
+    <div class="mt-14 flex justify-center">
       <UButton
         as="a"
         href="/fxg-cvdevweb-latest.pdf"
