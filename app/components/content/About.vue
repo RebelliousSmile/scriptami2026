@@ -30,8 +30,8 @@ const stack = await queryCollection('stack').first()
           />
         </div>
       </div>
-      <UIcon name="custom:quill" class="absolute bottom-0 right-0 hidden w-40 h-24 text-muted opacity-30 sm:block" />
-      <UIcon name="custom:quill" class="absolute bottom-0 -right-2 w-32 h-20 text-muted opacity-30 sm:hidden" />
+      <img src="/quill.svg" class="absolute bottom-0 right-0 hidden w-40 h-24 opacity-25 invert sm:block pointer-events-none select-none" alt="" aria-hidden="true" />
+      <img src="/quill.svg" class="absolute bottom-0 -right-2 w-32 h-20 opacity-25 invert sm:hidden pointer-events-none select-none" alt="" aria-hidden="true" />
     </div>
     <Divider class="my-8" />
     <slot

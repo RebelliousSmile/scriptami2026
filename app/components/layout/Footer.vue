@@ -3,7 +3,7 @@
     <Divider />
     <footer class="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-6">
       <span class="text-center text-sm text-muted">
-        © {{ new Date().getFullYear() }}, <ULink to="https://www.scriptami.com">Scriptami</ULink> - {{ $t("global.all_rights_reserved") }}.
+        © 2026 <ULink to="https://fxguillois.email" target="_blank">François-Xavier Guillois</ULink> — Nom de marque Scriptami — {{ $t("global.all_rights_reserved") }}
       </span>
     </footer>
   </div>
