@@ -29,8 +29,8 @@ const stack = await queryCollection('stack').first()
             mdc-unwrap="p"
           />
         </div>
-        <div class="flex justify-end mt-2">
-          <img src="/quill.svg" class="w-36 h-20 opacity-25 invert pointer-events-none select-none" alt="" aria-hidden="true" />
+        <div class="flex justify-end mt-4">
+          <img src="/quill.svg" class="w-48 h-28 opacity-30 pointer-events-none select-none" alt="" aria-hidden="true" />
         </div>
       </div>
     </div>
