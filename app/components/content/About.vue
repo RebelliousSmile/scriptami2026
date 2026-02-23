@@ -17,11 +17,11 @@ const stack = await queryCollection('stack').first()
       />
     </h2>
     <Divider class="mb-8 mt-2" />
-    <div class="relative flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <div class="relative flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between pb-28">
       <AboutProfilePicture />
       <div class="flex flex-col gap-3 sm:ml-4">
         <h3 class="text-lg">
-          Intro
+          En quelques mots&hellip;
         </h3>
         <div class="flex flex-col gap-4 text-primary">
           <slot
