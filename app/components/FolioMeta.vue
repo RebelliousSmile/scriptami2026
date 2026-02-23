@@ -14,18 +14,38 @@ const { page, isWriting } = defineProps<{
 }>()
 
 const route = useRoute()
-const { link, seo, profile } = useAppConfig()
+const { link, seo, profile, socials } = useAppConfig()
 
 const pageSEO = computed(() => ({
   title: isWriting ? page?.title : page?.title || seo.title,
   description: isWriting ? page?.description : page?.description || seo.description,
 }))
 
+const isHome = computed(() =>
+  !route.params.slug || (Array.isArray(route.params.slug) && route.params.slug.length === 0),
+)
+
 const getTitleTemplate = (title: string | undefined) => {
-  if (route.path === '/') return title || `${seo.title}`
+  if (isHome.value) return title || seo.title
   if (isWriting) return title
   return `${title} | ${seo.title}`
 }
+
+useSchemaOrg([
+  definePerson({
+    name: profile.name,
+    jobTitle: 'Développeur web indépendant',
+    url: seo.url,
+    email: profile.email,
+    sameAs: [socials.github, socials.linkedin].filter(Boolean),
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Rumilly',
+      addressRegion: 'Haute-Savoie',
+      addressCountry: 'FR',
+    },
+  }),
+])
 
 useSeoMeta({
   ogSiteName: seo.title,

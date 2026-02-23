@@ -27,7 +27,7 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://scriptami.com',
-    defaultLocale: 'en',
+    defaultLocale: 'fr',
     indexable: true,
   },
 
@@ -95,7 +95,7 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     strategy: 'prefix',
-    defaultLocale: 'en',
+    defaultLocale: 'fr',
   },
 
   icon: {

@@ -9,14 +9,23 @@
         class="absolute -top-8 left-1/2 size-72 -translate-x-1/2 rounded-full bg-white/25 blur-[120px] lg:-top-8 lg:size-[32rem] lg:blur-[200px]"
       />
 
-      <!-- profile picture -->
-      <HomeProfilePicture />
-
       <div class="z-20 flex flex-col items-center justify-center">
+        <!-- definition -->
+        <p
+          class="font-mono text-xs text-white/30 text-center max-w-lg mb-3"
+          style="--stagger: 1; --delay: 0ms"
+          data-animate
+        >
+          <slot
+            name="definition"
+            mdc-unwrap="p"
+          />
+        </p>
+
         <!-- title -->
         <div
           class="font-geist"
-          style="--stagger: 1; --delay: 10ms"
+          style="--stagger: 2; --delay: 10ms"
           data-animate
         >
           <h1 class="mx-auto font-medium text-center text-pretty bg-gradient-to-b from-white/90 to-white/30 bg-clip-text text-3xl text-transparent lg:max-w-3xl lg:text-4xl">
@@ -25,48 +34,51 @@
               mdc-unwrap="p"
             />
           </h1>
-
-          <!-- subtitle -->
-          <h2 class="mx-auto mt-4 max-w-xl text-center text-lg antialiased text-white/60">
-            <slot
-              name="hero_subtitle"
-              mdc-unwrap="p"
-            />
-          </h2>
         </div>
 
         <SettingsAvailability
           background
           class="mt-2"
-          style="--stagger: 2"
+          style="--stagger: 3"
           data-animate
         />
 
         <!-- social -->
         <HomeSocial
-          style="--stagger: 3"
+          style="--stagger: 4"
           data-animate
         />
 
         <!-- cta -->
         <HomeCTA
-          style="--stagger: 4"
+          style="--stagger: 5"
           data-animate
         />
 
+        <!-- services -->
         <div
-          style="--stagger: 5"
+          style="--stagger: 6"
           data-animate
-          class="mt-12 flex w-full max-w-3xl flex-col gap-4 lg:mt-16"
+          class="mt-12 flex w-full max-w-3xl flex-col gap-6 lg:mt-16"
         >
-          <!-- projects -->
+          <slot name="services" />
+        </div>
+
+        <Divider class="my-9" />
+
+        <!-- projects -->
+        <div
+          style="--stagger: 7"
+          data-animate
+          class="flex w-full max-w-3xl flex-col gap-4"
+        >
           <HomeProjects />
         </div>
 
         <Divider class="my-9" />
 
         <HomeFaq
-          style="--stagger: 6"
+          style="--stagger: 8"
           data-animate
         />
       </div>
