@@ -34,7 +34,7 @@ defineProps<{
         </div>
         <div
           v-if="index < items.length - 1"
-          class="w-16 flex items-center justify-center text-muted"
+          class="flex items-center justify-center text-muted"
         >
           <UIcon name="lucide:chevron-right" class="size-4 hidden sm:block" />
           <UIcon name="lucide:chevron-down" class="size-4 sm:hidden" />
