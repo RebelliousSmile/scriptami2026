@@ -29,10 +29,10 @@ const stack = await queryCollection('stack').first()
             mdc-unwrap="p"
           />
         </div>
-        <div class="flex justify-end mt-4">
-          <img src="/logos/picto-scriptami.svg" class="h-36 w-auto pointer-events-none select-none" style="filter: grayscale(1) drop-shadow(0 0 1px rgba(255,255,255,1)) drop-shadow(0 0 4px rgba(255,255,255,0.95)) drop-shadow(0 0 10px rgba(255,255,255,0.8)) drop-shadow(0 0 25px rgba(255,255,255,0.5)) drop-shadow(0 0 50px rgba(255,255,255,0.25)); opacity: 0.8;" alt="" aria-hidden="true" />
-        </div>
       </div>
+    </div>
+    <div class="flex justify-end -mt-2">
+      <img src="/logos/picto-scriptami.svg" class="h-36 w-auto pointer-events-none select-none" style="filter: grayscale(1) drop-shadow(0 0 1px rgba(255,255,255,1)) drop-shadow(0 0 4px rgba(255,255,255,0.95)) drop-shadow(0 0 10px rgba(255,255,255,0.8)) drop-shadow(0 0 25px rgba(255,255,255,0.5)) drop-shadow(0 0 50px rgba(255,255,255,0.25)); opacity: 0.8;" alt="" aria-hidden="true" />
     </div>
     <Divider class="my-8" />
     <slot
