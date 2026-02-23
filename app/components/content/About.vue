@@ -30,7 +30,7 @@ const stack = await queryCollection('stack').first()
           />
         </div>
         <div class="flex justify-end mt-4">
-          <img src="/logos/PICTO%20SCRIPTAMI.svg" class="h-36 w-auto pointer-events-none select-none" style="filter: grayscale(1) drop-shadow(0 0 10px rgba(121,121,121,0.5)); opacity: 0.5;" alt="" aria-hidden="true" />
+          <img src="/logos/PICTO%20SCRIPTAMI.svg" class="h-36 w-auto pointer-events-none select-none" style="filter: grayscale(1) drop-shadow(0 0 2px rgba(220,220,220,0.9)) drop-shadow(0 0 8px rgba(180,180,180,0.6)) drop-shadow(0 0 20px rgba(140,140,140,0.35)); opacity: 0.6;" alt="" aria-hidden="true" />
         </div>
       </div>
     </div>
