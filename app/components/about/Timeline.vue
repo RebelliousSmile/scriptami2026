@@ -13,7 +13,7 @@ defineProps<{
           <span class="text-xs font-mono text-muted">{{ item.date }}</span>
           <div class="size-2.5 rounded-full bg-white/60 ring-2 ring-white/20 ring-offset-2 ring-offset-black" />
         </div>
-        <div v-if="index < items.length - 1" class="w-4 h-0.5 bg-white/25" />
+        <div v-if="index < items.length - 1" class="w-16 h-px bg-white/25" />
       </template>
     </div>
 
@@ -34,7 +34,7 @@ defineProps<{
         </div>
         <div
           v-if="index < items.length - 1"
-          class="flex items-center justify-center text-muted"
+          class="w-16 flex items-center justify-center text-muted"
         >
           <UIcon name="lucide:chevron-right" class="size-4 hidden sm:block" />
           <UIcon name="lucide:chevron-down" class="size-4 sm:hidden" />
