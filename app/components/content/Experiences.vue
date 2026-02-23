@@ -3,7 +3,7 @@ import type { PropType } from 'vue'
 
 defineProps({
   experiences: {
-    type: Object as PropType<{ title: string, date: string, company: string }[]>,
+    type: Object as PropType<{ title: string, date: string, company: string, description?: string }[]>,
     required: true,
   },
 })
@@ -31,6 +31,9 @@ defineProps({
             {{ experience.company }}
           </p>
         </div>
+        <p v-if="experience.description" class="text-sm text-muted mt-1">
+          {{ experience.description }}
+        </p>
       </div>
     </div>
   </div>
