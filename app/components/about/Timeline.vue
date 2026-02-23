@@ -11,13 +11,9 @@ defineProps<{
       <template v-for="(item, index) in items" :key="'dot-' + index">
         <div class="flex-1 flex flex-col items-center gap-3">
           <span class="text-xs font-mono text-muted">{{ item.date }}</span>
-          <div class="relative flex items-center justify-center w-full">
-            <div class="absolute left-0 right-1/2 h-px bg-white/25" :class="{ 'opacity-0': index === 0 }" />
-            <div class="absolute left-1/2 right-0 h-px bg-white/25" :class="{ 'opacity-0': index === items.length - 1 }" />
-            <div class="size-2.5 rounded-full bg-white/60 ring-2 ring-white/20 ring-offset-2 ring-offset-black relative z-10" />
-          </div>
+          <div class="size-2.5 rounded-full bg-white/60 ring-2 ring-white/20 ring-offset-2 ring-offset-black" />
         </div>
-        <div v-if="index < items.length - 1" class="w-4 h-px bg-white/25" />
+        <div v-if="index < items.length - 1" class="w-4 h-0.5 bg-white/25" />
       </template>
     </div>
 
