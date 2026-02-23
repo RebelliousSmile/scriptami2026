@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="178.583px" height="371.339px" viewBox="0 0 178.583 371.339" enable-background="new 0 0 178.583 371.339"
+	 xml:space="preserve">
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="15.3408" y1="189.1211" x2="274.6338" y2="189.1211" gradientTransform="matrix(0 -1 1 0 -103.3364 275.1162)">
+		<stop  offset="0" style="stop-color:#A6CE39"/>
+		<stop  offset="0.5031" style="stop-color:#F8991D"/>
+		<stop  offset="0.6034" style="stop-color:#F9A11B"/>
+		<stop  offset="0.7813" style="stop-color:#FDB714"/>
+		<stop  offset="1" style="stop-color:#FFD800"/>
+	</linearGradient>
+	<polygon opacity="0.88" fill="url(#SVGID_1_)" points="77.854,259.775 171.903,0.482 63.919,59.496 -0.335,213.523 	"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="157.3096" y1="168.3223" x2="268.3916" y2="168.3223" gradientTransform="matrix(0 1 -1 0 276.7412 102.4658)">
+		<stop  offset="0" style="stop-color:#A6CE39"/>
+		<stop  offset="0.5031" style="stop-color:#F8991D"/>
+		<stop  offset="0.6034" style="stop-color:#F9A11B"/>
+		<stop  offset="0.7813" style="stop-color:#FDB714"/>
+		<stop  offset="1" style="stop-color:#FFD800"/>
+	</linearGradient>
+	<polygon opacity="0.88" fill="url(#SVGID_2_)" points="77.854,259.775 39.532,370.857 177.306,259.775 177.306,259.775 	"/>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="15.3408" y1="189.1211" x2="274.6338" y2="189.1211" gradientTransform="matrix(0 -1 1 0 -103.3364 275.1162)">
+		<stop  offset="0" style="stop-color:#000000"/>
+		<stop  offset="0.1085" style="stop-color:#131313;stop-opacity:0.8915"/>
+		<stop  offset="0.2324" style="stop-color:#353436;stop-opacity:0.7676"/>
+		<stop  offset="0.3637" style="stop-color:#505052;stop-opacity:0.6363"/>
+		<stop  offset="0.5003" style="stop-color:#6B6C6E;stop-opacity:0.4997"/>
+		<stop  offset="0.641" style="stop-color:#8A8C8E;stop-opacity:0.359"/>
+		<stop  offset="0.7852" style="stop-color:#B1B3B5;stop-opacity:0.2148"/>
+		<stop  offset="0.9294" style="stop-color:#E1E2E3;stop-opacity:0.0706"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<polygon opacity="0.18" fill="url(#SVGID_3_)" points="77.854,259.775 171.903,0.482 63.919,59.496 -0.335,213.523 	"/>
+	
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="157.3096" y1="168.3223" x2="268.3916" y2="168.3223" gradientTransform="matrix(0 1 -1 0 276.7412 102.4658)">
+		<stop  offset="0" style="stop-color:#000000;stop-opacity:0.83"/>
+		<stop  offset="0.1085" style="stop-color:#131313;stop-opacity:0.7399"/>
+		<stop  offset="0.2324" style="stop-color:#353436;stop-opacity:0.6371"/>
+		<stop  offset="0.3637" style="stop-color:#505052;stop-opacity:0.5282"/>
+		<stop  offset="0.5003" style="stop-color:#6B6C6E;stop-opacity:0.4148"/>
+		<stop  offset="0.641" style="stop-color:#8A8C8E;stop-opacity:0.298"/>
+		<stop  offset="0.7852" style="stop-color:#B1B3B5;stop-opacity:0.1783"/>
+		<stop  offset="0.9294" style="stop-color:#E1E2E3;stop-opacity:0.0586"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<polygon opacity="0.18" fill="url(#SVGID_4_)" points="77.854,259.775 39.532,370.857 177.306,259.775 177.306,259.775 	"/>
+	
+		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="15.3408" y1="191.8223" x2="215.6201" y2="191.8223" gradientTransform="matrix(0 -1 1 0 -103.3364 275.1162)">
+		<stop  offset="0" style="stop-color:#A6CE39"/>
+		<stop  offset="0.5031" style="stop-color:#00B5AD"/>
+		<stop  offset="0.616" style="stop-color:#00B8B3"/>
+		<stop  offset="0.8155" style="stop-color:#44C1C5"/>
+		<stop  offset="1" style="stop-color:#70CCD9"/>
+	</linearGradient>
+	<polygon opacity="0.88" fill="url(#SVGID_5_)" points="77.854,259.775 177.306,259.775 63.919,59.496 -0.335,213.523 	"/>
+</g>
+</svg>
