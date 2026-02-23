@@ -29,19 +29,6 @@ const stack = await queryCollection('stack').first()
             mdc-unwrap="p"
           />
         </div>
-        <div class="flex justify-center">
-          <UButton
-            as="a"
-            href="/fxg-cvdevweb-latest.pdf"
-            download
-            target="_blank"
-            icon="lucide:download"
-            variant="outline"
-            size="sm"
-          >
-            {{ $t("global.cv") }}
-          </UButton>
-        </div>
       </div>
     </div>
     <div class="flex justify-end -mt-2">
@@ -52,7 +39,7 @@ const stack = await queryCollection('stack').first()
       name="experiences"
       mdc-unwrap="p"
     />
-    <div class="mt-6 flex justify-center">
+    <div class="my-8 flex justify-center">
       <UButton
         as="a"
         href="/fxg-cvdevweb-latest.pdf"
