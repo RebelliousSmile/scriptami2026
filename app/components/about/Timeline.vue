@@ -9,7 +9,7 @@ defineProps<{
     <!-- Timeline line + dots (desktop) — même structure que la rangée de blocs -->
     <div class="hidden sm:flex items-center gap-2">
       <template v-for="(item, index) in items" :key="'dot-' + index">
-        <div class="flex-1 flex flex-col items-center gap-1">
+        <div class="flex-1 flex flex-col items-center gap-3">
           <span class="text-xs font-mono text-muted">{{ item.date }}</span>
           <div class="size-2.5 rounded-full bg-white/60 ring-2 ring-white/20 ring-offset-2 ring-offset-black" />
         </div>
