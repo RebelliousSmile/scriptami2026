@@ -75,7 +75,7 @@
           <HomeProjects />
           <img
             src="/logos/picto-scriptami.svg"
-            class="pointer-events-none select-none absolute -bottom-4 right-0 h-20 w-auto sm:h-28 sm:-right-8"
+            class="pointer-events-none select-none absolute -bottom-10 right-8 h-20 w-auto sm:h-28 sm:-right-8 sm:-bottom-4"
             style="filter: grayscale(1) drop-shadow(0 0 1px rgba(255,255,255,1)) drop-shadow(0 0 4px rgba(255,255,255,0.95)) drop-shadow(0 0 10px rgba(255,255,255,0.8)) drop-shadow(0 0 25px rgba(255,255,255,0.5)) drop-shadow(0 0 50px rgba(255,255,255,0.25)); opacity: 0.35;"
             alt=""
             aria-hidden="true"
