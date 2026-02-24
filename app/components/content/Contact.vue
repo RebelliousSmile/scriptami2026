@@ -12,16 +12,33 @@ const state = ref({
   message: '',
   phone: '',
   fullname: '',
-  subject: '',
+  project_type: '',
+  budget: '',
 })
 
 const schema = z.object({
   email: z.string().email('Invalid email'),
   message: z.string().min(10, 'Message is too short'),
-  subject: z.string().min(5, 'Subject is too short'),
+  project_type: z.string().min(1, 'Please select a project type'),
   fullname: z.string().min(3, 'Name is too short'),
 })
 type Schema = z.output<typeof schema>
+
+const projectTypeOptions = computed(() => [
+  { label: t('contact.project_types.prestashop'), value: 'prestashop' },
+  { label: t('contact.project_types.pennylane'), value: 'pennylane' },
+  { label: t('contact.project_types.website'), value: 'website' },
+  { label: t('contact.project_types.app'), value: 'app' },
+  { label: t('contact.project_types.other'), value: 'other' },
+])
+
+const budgetOptions = computed(() => [
+  { label: t('contact.budgets.less_1k'), value: 'less_1k' },
+  { label: t('contact.budgets.1k_3k'), value: '1k_3k' },
+  { label: t('contact.budgets.3k_10k'), value: '3k_10k' },
+  { label: t('contact.budgets.more_10k'), value: 'more_10k' },
+  { label: t('contact.budgets.unknown'), value: 'unknown' },
+])
 
 const loading = ref(false)
 
@@ -37,7 +54,8 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       message: '',
       phone: '',
       fullname: '',
-      subject: '',
+      project_type: '',
+      budget: '',
     }
     toast.success(t('contact.success'))
   }
@@ -71,7 +89,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         @submit="onSubmit"
       >
         <UFormField
-          label="Fullname"
+          :label="$t('contact.fullname')"
           name="fullname"
           required
         >
@@ -80,12 +98,12 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             type="text"
             autocomplete="name"
             class="w-full"
-            placeholder="John Doe"
+            placeholder="Jean Dupont"
           />
         </UFormField>
 
         <UFormField
-          label="Email"
+          :label="$t('contact.email')"
           name="email"
           required
         >
@@ -93,36 +111,51 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             v-model="state.email"
             autocomplete="email"
             class="w-full"
-            placeholder="john.doe@gmail.com"
+            placeholder="jean.dupont@entreprise.fr"
           />
         </UFormField>
 
         <UFormField
-          label="Phone"
+          :label="$t('contact.phone')"
           name="phone"
         >
           <UInput
             v-model="state.phone"
             autocomplete="tel"
             class="w-full"
-            placeholder="123-456-7890"
+            placeholder="06 00 00 00 00"
           />
         </UFormField>
 
         <UFormField
-          label="Subject"
-          name="subject"
+          :label="$t('contact.project_type')"
+          name="project_type"
           required
         >
-          <UInput
-            v-model="state.subject"
+          <USelect
+            v-model="state.project_type"
+            :items="projectTypeOptions"
             class="w-full"
-            :placeholder="$t('contact.subject')"
+            value-key="value"
+            label-key="label"
           />
         </UFormField>
 
         <UFormField
-          label="Message"
+          :label="$t('contact.budget')"
+          name="budget"
+        >
+          <USelect
+            v-model="state.budget"
+            :items="budgetOptions"
+            class="w-full"
+            value-key="value"
+            label-key="label"
+          />
+        </UFormField>
+
+        <UFormField
+          :label="$t('contact.message')"
           name="message"
           required
         >
@@ -130,10 +163,11 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             v-model="state.message"
             autoresize
             class="w-full"
-            :rows="4"
-            placeholder="Lets work together!"
+            :rows="5"
+            :placeholder="$t('contact.message_placeholder')"
           />
         </UFormField>
+
         <div class="flex justify-center">
           <UTooltip
             :disabled="isResendEnabled"
