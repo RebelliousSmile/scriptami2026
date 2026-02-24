@@ -21,7 +21,7 @@ export default defineEventHandler(async (event: H3Event) => {
         <li><strong>Budget envisagé :</strong> ${budget || 'Non précisé'}</li>
       </ul>
       <p><strong>Description du projet :</strong></p>
-      <p>${message}</p>
+      <p>${message.replace(/\n/g, '<br>')}</p>
       `,
     })
   }
