@@ -47,9 +47,16 @@ const loading = ref(false)
 async function onSubmit(event: FormSubmitEvent<Schema>) {
   loading.value = true
   try {
+    const projectLabel = projectTypeOptions.value.find(o => o.value === state.value.project_type)?.label
+    const budgetLabel = budgetOptions.value.find(o => o.value === state.value.budget)?.label
     await $fetch('/api/emails/send', {
       method: 'POST',
-      body: event.data,
+      body: {
+        ...event.data,
+        phone: state.value.phone,
+        budget: budgetLabel || state.value.budget,
+        project_type: projectLabel || state.value.project_type,
+      },
     })
     await navigateTo(localePath('/merci'))
   }
