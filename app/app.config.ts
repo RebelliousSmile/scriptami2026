@@ -8,7 +8,7 @@ export default defineAppConfig({
     job: 'Développeur web indépendant',
     email: 'ecrire.a@scriptami.com',
     phone: '(+33) 6 38 05 61 00',
-    picture: '/portrait.jpg',
+    picture: '/portrait.webp',
   },
   socials: {
     github: 'https://github.com/tnntwister',
