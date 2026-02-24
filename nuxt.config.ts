@@ -116,4 +116,13 @@ export default defineNuxtConfig({
     zeroRuntime: true,
   },
 
+  sitemap: {
+    strictNuxtContentPaths: true,
+  },
+
+  robots: {
+    disallow: [],
+    allow: '/',
+  },
+
 })

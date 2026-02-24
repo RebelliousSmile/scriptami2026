@@ -15,6 +15,7 @@ const { page, isWriting } = defineProps<{
 
 const route = useRoute()
 const { link, seo, profile, socials } = useAppConfig()
+const requestURL = useRequestURL()
 
 const pageSEO = computed(() => ({
   title: isWriting ? page?.title : page?.title || seo.title,
@@ -52,7 +53,7 @@ useSeoMeta({
   ogTitle: pageSEO.value.title,
   ogDescription: pageSEO.value.description,
   ogType: isWriting ? 'article' : 'website',
-  ogUrl: seo.url,
+  ogUrl: requestURL.href,
   author: profile.name,
   title: pageSEO.value.title,
   description: pageSEO.value.description,

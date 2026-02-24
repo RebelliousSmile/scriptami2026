@@ -36,6 +36,16 @@ defineShortcuts({
 defineOgImage({
   url: page.value.image,
 })
+
+useSchemaOrg([
+  defineArticle({
+    headline: page.value.title,
+    description: page.value.description ?? undefined,
+    image: page.value.image ?? undefined,
+    datePublished: page.value.date,
+    author: [{ name: 'François-Xavier Guillois', url: 'https://scriptami.com' }],
+  }),
+])
 </script>
 
 <template>
