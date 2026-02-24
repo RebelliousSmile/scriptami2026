@@ -25,11 +25,11 @@ const schema = z.object({
 type Schema = z.output<typeof schema>
 
 const projectTypeOptions = computed(() => [
-  { label: t('contact.project_types.prestashop'), value: 'prestashop' },
-  { label: t('contact.project_types.pennylane'), value: 'pennylane' },
-  { label: t('contact.project_types.website'), value: 'website' },
-  { label: t('contact.project_types.app'), value: 'app' },
-  { label: t('contact.project_types.other'), value: 'other' },
+  { label: t('contact.project_types.prestashop'), value: 'prestashop', icon: 'heroicons-shopping-cart' },
+  { label: t('contact.project_types.pennylane'), value: 'pennylane', icon: 'heroicons-document-text' },
+  { label: t('contact.project_types.website'), value: 'website', icon: 'heroicons-globe-alt' },
+  { label: t('contact.project_types.app'), value: 'app', icon: 'heroicons-cpu-chip' },
+  { label: t('contact.project_types.other'), value: 'other', icon: 'heroicons-ellipsis-horizontal-circle' },
 ])
 
 const budgetOptions = computed(() => [
@@ -85,9 +85,56 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       <UForm
         :state
         :schema
-        class="flex w-full max-w-[40rem] flex-col gap-3"
+        class="flex w-full max-w-[40rem] flex-col gap-5"
         @submit="onSubmit"
       >
+        <!-- Type de projet -->
+        <UFormField
+          :label="$t('contact.project_type')"
+          name="project_type"
+          required
+        >
+          <div class="mt-1 grid grid-cols-2 gap-2 sm:grid-cols-3">
+            <button
+              v-for="option in projectTypeOptions"
+              :key="option.value"
+              type="button"
+              class="flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-2.5 text-sm transition-all duration-200"
+              :class="state.project_type === option.value
+                ? 'border-primary bg-primary/10 text-primary'
+                : 'border-neutral-700 bg-neutral-900 text-neutral-300 hover:border-neutral-500 hover:text-white'"
+              @click="state.project_type = option.value"
+            >
+              <UIcon
+                :name="option.icon"
+                class="size-4 shrink-0"
+              />
+              <span class="text-left leading-tight">{{ option.label }}</span>
+            </button>
+          </div>
+        </UFormField>
+
+        <!-- Budget -->
+        <UFormField
+          :label="$t('contact.budget')"
+          name="budget"
+        >
+          <div class="mt-1 flex flex-wrap gap-2">
+            <button
+              v-for="option in budgetOptions"
+              :key="option.value"
+              type="button"
+              class="cursor-pointer rounded-full border px-3 py-1.5 text-sm transition-all duration-200"
+              :class="state.budget === option.value
+                ? 'border-primary bg-primary/10 text-primary'
+                : 'border-neutral-700 bg-neutral-900 text-neutral-300 hover:border-neutral-500 hover:text-white'"
+              @click="state.budget = state.budget === option.value ? '' : option.value"
+            >
+              {{ option.label }}
+            </button>
+          </div>
+        </UFormField>
+
         <UFormField
           :label="$t('contact.fullname')"
           name="fullname"
@@ -124,33 +171,6 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             autocomplete="tel"
             class="w-full"
             placeholder="06 00 00 00 00"
-          />
-        </UFormField>
-
-        <UFormField
-          :label="$t('contact.project_type')"
-          name="project_type"
-          required
-        >
-          <USelect
-            v-model="state.project_type"
-            :items="projectTypeOptions"
-            class="w-full"
-            value-key="value"
-            label-key="label"
-          />
-        </UFormField>
-
-        <UFormField
-          :label="$t('contact.budget')"
-          name="budget"
-        >
-          <USelect
-            v-model="state.budget"
-            :items="budgetOptions"
-            class="w-full"
-            value-key="value"
-            label-key="label"
           />
         </UFormField>
 
