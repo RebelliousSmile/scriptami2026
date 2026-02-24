@@ -70,9 +70,16 @@
         <div
           style="--stagger: 7"
           data-animate
-          class="flex w-full max-w-3xl flex-col gap-4"
+          class="relative flex w-full max-w-3xl flex-col gap-4"
         >
           <HomeProjects />
+          <img
+            src="/logos/picto-scriptami.svg"
+            class="pointer-events-none select-none absolute -bottom-4 -right-8 h-28 w-auto hidden sm:block"
+            style="filter: grayscale(1) drop-shadow(0 0 1px rgba(255,255,255,1)) drop-shadow(0 0 4px rgba(255,255,255,0.95)) drop-shadow(0 0 10px rgba(255,255,255,0.8)) drop-shadow(0 0 25px rgba(255,255,255,0.5)) drop-shadow(0 0 50px rgba(255,255,255,0.25)); opacity: 0.35;"
+            alt=""
+            aria-hidden="true"
+          />
         </div>
 
         <Divider class="my-9" />
