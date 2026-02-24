@@ -74,7 +74,13 @@ useHead({
   link,
 })
 
-defineOgImage({ url: 'https://www.scriptami.com/og.png', width: 1200, height: 630, alt: 'Home image' })
+defineOgImage({
+  component: 'Scriptami',
+  props: {
+    title: pageSEO.value.title,
+    description: pageSEO.value.description,
+  },
+})
 </script>
 
 <template>
