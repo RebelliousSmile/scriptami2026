@@ -28,7 +28,7 @@ const projectTypeOptions = computed(() => [
   { label: t('contact.project_types.prestashop'), value: 'prestashop', icon: 'heroicons-shopping-cart' },
   { label: t('contact.project_types.pennylane'), value: 'pennylane', icon: 'heroicons-document-text' },
   { label: t('contact.project_types.website'), value: 'website', icon: 'heroicons-globe-alt' },
-  { label: t('contact.project_types.wordpress'), value: 'wordpress', icon: 'heroicons-circle-stack' },
+  { label: t('contact.project_types.api'), value: 'api', icon: 'heroicons-arrows-right-left' },
   { label: t('contact.project_types.app'), value: 'app', icon: 'heroicons-cpu-chip' },
   { label: t('contact.project_types.other'), value: 'other', icon: 'heroicons-ellipsis-horizontal-circle' },
 ])

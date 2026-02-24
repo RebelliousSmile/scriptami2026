@@ -16,7 +16,7 @@
     "prestashop": "Custom PrestaShop",
     "pennylane": "Pennylane / E-invoicing",
     "website": "Website / Showcase",
-    "wordpress": "WordPress / CMS",
+    "api": "API Integration",
     "app": "Business application",
     "other": "Other"
   },

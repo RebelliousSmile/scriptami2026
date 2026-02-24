@@ -16,7 +16,7 @@
     "prestashop": "PrestaShop sur mesure",
     "pennylane": "Pennylane / Facturation",
     "website": "Site web / Vitrine",
-    "wordpress": "WordPress / CMS",
+    "api": "Intégration API",
     "app": "Application métier",
     "other": "Autre"
   },
