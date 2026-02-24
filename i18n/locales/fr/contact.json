@@ -14,16 +14,17 @@
   "error": "Oups, une erreur s'est produite lors de l'envoi de votre message :(",
   "project_types": {
     "prestashop": "PrestaShop sur mesure",
-    "pennylane": "Pennylane / Facturation électronique",
+    "pennylane": "Pennylane / Facturation",
     "website": "Site web / Vitrine",
+    "wordpress": "WordPress / CMS",
     "app": "Application métier",
     "other": "Autre"
   },
   "budgets": {
-    "less_1k": "Moins de 1 000 €",
-    "1k_3k": "1 000 € – 3 000 €",
-    "3k_10k": "3 000 € – 10 000 €",
-    "more_10k": "Plus de 10 000 €",
+    "less_1k": "< 1 000 €",
+    "1k_3k": "1k – 3k €",
+    "3k_10k": "3k – 10k €",
+    "more_10k": "> 10 000 €",
     "unknown": "À définir"
   }
 }

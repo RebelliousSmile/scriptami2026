@@ -28,6 +28,7 @@ const projectTypeOptions = computed(() => [
   { label: t('contact.project_types.prestashop'), value: 'prestashop', icon: 'heroicons-shopping-cart' },
   { label: t('contact.project_types.pennylane'), value: 'pennylane', icon: 'heroicons-document-text' },
   { label: t('contact.project_types.website'), value: 'website', icon: 'heroicons-globe-alt' },
+  { label: t('contact.project_types.wordpress'), value: 'wordpress', icon: 'heroicons-circle-stack' },
   { label: t('contact.project_types.app'), value: 'app', icon: 'heroicons-cpu-chip' },
   { label: t('contact.project_types.other'), value: 'other', icon: 'heroicons-ellipsis-horizontal-circle' },
 ])
@@ -94,7 +95,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
           name="project_type"
           required
         >
-          <div class="mt-1 grid grid-cols-2 gap-2 sm:grid-cols-3">
+          <div class="mt-1 grid grid-cols-3 gap-2">
             <button
               v-for="option in projectTypeOptions"
               :key="option.value"
@@ -119,12 +120,12 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
           :label="$t('contact.budget')"
           name="budget"
         >
-          <div class="mt-1 flex flex-wrap gap-2">
+          <div class="mt-1 grid grid-cols-5 gap-2">
             <button
               v-for="option in budgetOptions"
               :key="option.value"
               type="button"
-              class="cursor-pointer rounded-full border px-3 py-1.5 text-sm transition-all duration-200"
+              class="cursor-pointer rounded-full border px-2 py-1.5 text-center text-sm transition-all duration-200"
               :class="state.budget === option.value
                 ? 'border-primary bg-primary/10 text-primary'
                 : 'border-neutral-700 bg-neutral-900 text-neutral-300 hover:border-neutral-500 hover:text-white'"
