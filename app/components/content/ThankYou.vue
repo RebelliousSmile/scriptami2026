@@ -9,12 +9,10 @@
     <p class="text-lg font-extralight text-muted">
       <slot name="subtitle" mdc-unwrap="p" />
     </p>
-    <div class="mt-4 flex flex-col gap-3 sm:flex-row">
-      <NuxtLinkLocale to="/">
-        <UButton variant="outline" icon="heroicons-home">
-          <slot name="back" mdc-unwrap="p" />
-        </UButton>
-      </NuxtLinkLocale>
+    <div class="mt-4 flex flex-col items-center gap-3 sm:flex-row">
+      <UButton as="NuxtLinkLocale" to="/" variant="outline" icon="heroicons-home">
+        <slot name="back" mdc-unwrap="p" />
+      </UButton>
       <MeetingButton />
     </div>
   </section>
