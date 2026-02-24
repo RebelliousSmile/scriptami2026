@@ -61,9 +61,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-05',
 
   nitro: {
-    experimental: {
-      websocket: true,
-    },
     prerender: {
       autoSubfolderIndex: false,
       crawlLinks: true,

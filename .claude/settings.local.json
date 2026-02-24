@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk git:*)",
+      "Bash(cd:*)",
+      "Bash(head:*)"
+    ],
+    "defaultMode": "bypassPermissions"
+  }
+}
