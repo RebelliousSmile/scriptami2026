@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   css: ['~/assets/style/main.css'],
 
   site: {
-    url: 'https://scriptami.com',
+    url: 'https://www.scriptami.com',
     defaultLocale: 'fr',
     indexable: true,
   },
