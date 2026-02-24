@@ -17,7 +17,7 @@ const stack = await queryCollection('stack').first()
       />
     </h2>
     <Divider class="mb-8 mt-2" />
-    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <div class="relative flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
       <AboutProfilePicture />
       <div class="flex flex-col gap-3 sm:ml-4">
         <h3 class="text-lg">
@@ -29,9 +29,13 @@ const stack = await queryCollection('stack').first()
           />
         </div>
       </div>
-    </div>
-    <div class="flex justify-end -mt-20">
-      <img src="/logos/picto-scriptami.svg" class="h-36 w-auto pointer-events-none select-none" style="filter: grayscale(1) drop-shadow(0 0 1px rgba(255,255,255,1)) drop-shadow(0 0 4px rgba(255,255,255,0.95)) drop-shadow(0 0 10px rgba(255,255,255,0.8)) drop-shadow(0 0 25px rgba(255,255,255,0.5)) drop-shadow(0 0 50px rgba(255,255,255,0.25)); opacity: 0.8;" alt="" aria-hidden="true" />
+      <img
+        src="/logos/picto-scriptami.svg"
+        class="pointer-events-none select-none absolute -bottom-4 -right-4 h-28 w-auto hidden sm:block"
+        style="filter: grayscale(1) drop-shadow(0 0 1px rgba(255,255,255,1)) drop-shadow(0 0 4px rgba(255,255,255,0.95)) drop-shadow(0 0 10px rgba(255,255,255,0.8)) drop-shadow(0 0 25px rgba(255,255,255,0.5)) drop-shadow(0 0 50px rgba(255,255,255,0.25)); opacity: 0.35;"
+        alt=""
+        aria-hidden="true"
+      />
     </div>
     <Divider class="my-8" />
     <slot
