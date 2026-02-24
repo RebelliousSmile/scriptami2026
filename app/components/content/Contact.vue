@@ -4,6 +4,7 @@ import type { FormSubmitEvent } from '#ui/types'
 
 const { profile } = useAppConfig()
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 const isResendEnabled = useRuntimeConfig().public.resend
 
@@ -50,15 +51,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       method: 'POST',
       body: event.data,
     })
-    state.value = {
-      email: '',
-      message: '',
-      phone: '',
-      fullname: '',
-      project_type: '',
-      budget: '',
-    }
-    toast.success(t('contact.success'))
+    await navigateTo(localePath('/merci'))
   }
   catch {
     toast.error(t('contact.error'))
