@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import type { ContentEnCollectionItem, ContentFrCollectionItem } from '@nuxt/content'
 
-useScriptPlausibleAnalytics({
-  domain: 'www.scriptami.com',
-  scriptInput: {
-    src: 'https://analytics.hrcd.fr/js/script.js',
-  },
-})
-
 const { page, isWriting } = defineProps<{
   page: ContentEnCollectionItem | ContentFrCollectionItem
   isWriting: boolean

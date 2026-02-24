@@ -7,7 +7,6 @@ defineProps<{
     link: string
   }
 }>()
-const img = useImage()
 </script>
 
 <template>
@@ -24,7 +23,6 @@ const img = useImage()
     </div>
     <div class="flex h-56 justify-center overflow-hidden rounded-lg">
       <NuxtImg
-        :placeholder="img(`${project.image}`)"
         width="1536"
         :alt="project.name + ' project image'"
         class="h-full rounded-lg object-cover transition-all duration-300 hover:scale-105"
