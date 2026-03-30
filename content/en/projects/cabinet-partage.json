@@ -7,7 +7,7 @@
   "featured": true,
   "type": "client",
   "theme": "light",
-  "description": "Booking platform for shared medical offices for healthcare professionals in Savoie and Haute-Savoie.",
+  "description": "Presentation and management website for shared medical offices for healthcare professionals across two locations in Savoie and Haute-Savoie. Everything is managed from the site admin panel.",
   "stack": [
     "Nuxt",
     "PostgreSQL"

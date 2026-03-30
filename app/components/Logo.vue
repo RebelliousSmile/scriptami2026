@@ -15,11 +15,11 @@ defineProps({
     class="flex shrink-0 items-center"
     aria-label="Go back to home page"
   >
-    <NuxtImg
+    <img
       src="/logo.png"
       class="size-8"
       alt="Scriptami logo"
-    />
+    >
     <span
       v-if="isText"
       class="ml-1 text-xs font-semibold"

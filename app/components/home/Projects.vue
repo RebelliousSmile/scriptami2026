@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
 
+import pictoUrl from '~/assets/icons/picto-scriptami.svg?url'
+
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
-const { data: projects } = await useAsyncData('home-projects', async () => {
+const { data: projects } = await useAsyncData(`home-projects-${locale.value}`, async () => {
   const collection = ('projects_' + locale.value) as keyof Collections
   return await queryCollection(collection).order('order', 'ASC').all() as Collections['projects_en'][] | Collections['projects_fr'][]
 }, {
@@ -21,12 +23,12 @@ const opensourceCount = computed(() => projects.value?.filter(p => p.type === 'o
       :to="localePath('/works')"
       class="group relative flex overflow-hidden rounded-lg border border-white/10 bg-zinc-900/80 p-6 transition-colors hover:bg-zinc-800/80"
     >
-      <NuxtImg
-        src="/logos/picto-scriptami.svg"
+      <img
+        :src="pictoUrl"
         alt=""
         aria-hidden="true"
         class="pointer-events-none absolute -right-4 -bottom-4 h-32 opacity-10 transition-opacity group-hover:opacity-20"
-      />
+      >
       <div class="flex flex-col gap-3">
         <div class="flex items-center gap-4 text-sm text-muted">
           <span>{{ clientCount }} {{ t('global.client_projects').toLowerCase() }}</span>

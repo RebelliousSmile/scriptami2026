@@ -26,13 +26,12 @@ defineProps({
     class="flex cursor-pointer flex-col gap-2"
   >
     <div class="overflow-hidden rounded-md border border-white/10 shadow-md shadow-zinc-950/50 transition-colors duration-200 hover:border-white/20">
-      <NuxtImg
-        width="1536"
+      <img
         :alt="`${title} article image`"
         class="h-64 w-full object-cover transition-transform duration-200 hover:scale-105"
         :src="image"
         :aria-label="`${title} article image`"
-      />
+      >
     </div>
     <div class="flex flex-col">
       <h3 class="text-lg font-semibold">

@@ -6,7 +6,7 @@
   "date": "2021",
   "type": "client",
   "theme": "light",
-  "description": "Configurator and showcase website for smart connected lockers.",
+  "description": "Multiple developments for SmartLOCKERS, the leader in custom connected lockers in France, assembled on-site with locally sourced materials. API, webapp, embedded application, back office, etc.",
   "stack": [
     "PHP",
     "JavaScript",

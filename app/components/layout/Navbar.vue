@@ -35,12 +35,12 @@ const localePath = useLocalePath()
             :to="localePath(item.to)"
             class="flex items-center rounded-full border border-transparent px-4 py-1 transition-all duration-300 ease-in-out hover:border-white/5 hover:bg-zinc-900/50 hover:backdrop-blur-3xl sm:px-6"
           >
-            <NuxtImg
+            <img
               v-if="item.name === 'Home'"
               src="/logo.png"
               class="size-7 sm:size-6 rounded-full object-cover"
               alt="Scriptami"
-            />
+            >
             <UIcon
               v-else
               :name="item.icon"

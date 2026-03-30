@@ -6,7 +6,7 @@
   "date": "2026",
   "type": "opensource",
   "theme": "light",
-  "description": "Visual inspiration board to organize and share creative ideas.",
+  "description": "Turn a list of inspiration images into a PDF, combined with an AI chat.",
   "stack": [
     "Nuxt",
     "Tailwind CSS"

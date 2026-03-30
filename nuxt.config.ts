@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/seo',
     '@nuxt/content',
-    '@nuxt/image',
     'vue-sonner/nuxt',
   ],
 

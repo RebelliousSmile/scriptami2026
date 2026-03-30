@@ -33,20 +33,18 @@ const hasValidLink = computed(() => props.project.link && props.project.link !==
         :aria-label="project.name + ' project link'"
         class="h-full w-full"
       >
-        <NuxtImg
-          width="1536"
+        <img
           :alt="project.name + ' project image'"
           class="h-full w-full rounded-lg object-cover transition-all duration-300 hover:scale-105"
           :src="project.image"
-        />
+        >
       </NuxtLink>
-      <NuxtImg
+      <img
         v-else
-        width="1536"
         :alt="project.name + ' project image'"
         class="h-full w-full rounded-lg object-cover"
         :src="project.image"
-      />
+      >
       <Transition
         enter-active-class="transition-all duration-300 ease-out"
         leave-active-class="transition-all duration-200 ease-in"

@@ -6,7 +6,7 @@
   "date": "2025",
   "type": "client",
   "theme": "light",
-  "description": "E-commerce website for tiles and ceramics.",
+  "description": "Consultative tile and ceramics catalog for the showroom, allowing to indicate desired references and prices and request a quote online.",
   "stack": [
     "PrestaShop 8"
   ],

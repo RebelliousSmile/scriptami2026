@@ -6,7 +6,7 @@
   "date": "2018",
   "type": "client",
   "theme": "light",
-  "description": "Community portal dedicated to board game news.",
+  "description": "Theme and plugin development for the board game website Ludovox.",
   "stack": [
     "WordPress"
   ],

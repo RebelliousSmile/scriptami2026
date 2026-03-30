@@ -5,7 +5,7 @@
   "release": "2025",
   "date": "2025",
   "type": "client",
-  "description": "Business application for the ONET group.",
+  "description": "Development of an equipment provisioning application via connected lockers for ONET.",
   "stack": [
     "JavaScript",
     "Balena"

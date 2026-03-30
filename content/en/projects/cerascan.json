@@ -6,7 +6,7 @@
   "date": "2025",
   "type": "client",
   "theme": "dark",
-  "description": "Pricing and quote management application for professionals.",
+  "description": "Application for tile showrooms, allowing to anonymize references and prices of tiles by generating QR codes for all products in your catalog. Available to salespeople to assist customers in the showroom.",
   "stack": [
     "Alpine.js",
     "Node.js",

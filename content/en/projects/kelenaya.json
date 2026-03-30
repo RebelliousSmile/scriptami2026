@@ -5,7 +5,7 @@
   "release": "2025",
   "date": "2025",
   "type": "client",
-  "description": "Showcase website for Kelenaya.",
+  "description": "E-commerce website selling products for women cyclists. Migration from PrestaShop 1.7 to 8, brand name change, transition from single-store to multi-store.",
   "stack": [
     "PrestaShop 1.7/8.2"
   ],

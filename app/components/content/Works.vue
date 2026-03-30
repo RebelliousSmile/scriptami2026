@@ -3,7 +3,7 @@ import type { Collections } from '@nuxt/content'
 
 const { locale, t } = useI18n()
 
-const { data: projects } = await useAsyncData('works-projects', async () => {
+const { data: projects } = await useAsyncData(`works-projects-${locale.value}`, async () => {
   const collection = ('projects_' + locale.value) as keyof Collections
   return await queryCollection(collection).order('order', 'ASC').all() as Collections['projects_en'][] | Collections['projects_fr'][]
 }, {

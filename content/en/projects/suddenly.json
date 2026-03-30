@@ -7,7 +7,7 @@
   "featured": true,
   "type": "opensource",
   "theme": "dark",
-  "description": "Next-generation social network.",
+  "description": "New application for the fediverse to create shared narratives.",
   "stack": [
     "Python",
     "Django",

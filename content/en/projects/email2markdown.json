@@ -6,7 +6,7 @@
   "date": "2026",
   "featured": true,
   "type": "opensource",
-  "description": "Automatic conversion tool from HTML emails to clean, structured Markdown.",
+  "description": "Export your emails into a clean and structured Markdown file tree. Inbox Zero method: sort all your email content in different steps, keep what matters, delete the rest, keep peace of mind.",
   "stack": [
     "Rust"
   ],
