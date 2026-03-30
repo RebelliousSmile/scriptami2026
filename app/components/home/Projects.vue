@@ -21,12 +21,12 @@ const opensourceCount = computed(() => projects.value?.filter(p => p.type === 'o
       :to="localePath('/works')"
       class="group relative flex overflow-hidden rounded-lg border border-white/10 bg-zinc-900/80 p-6 transition-colors hover:bg-zinc-800/80"
     >
-      <img
+      <NuxtImg
         src="/logos/picto-scriptami.svg"
         alt=""
         aria-hidden="true"
         class="pointer-events-none absolute -right-4 -bottom-4 h-32 opacity-10 transition-opacity group-hover:opacity-20"
-      >
+      />
       <div class="flex flex-col gap-3">
         <div class="flex items-center gap-4 text-sm text-muted">
           <span>{{ clientCount }} {{ t('global.client_projects').toLowerCase() }}</span>
