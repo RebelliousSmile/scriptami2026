@@ -3,5 +3,12 @@
   "image": "/projects/giveaways.jpg",
   "link": "https://github.com/tnntwister/dc-giveaways",
   "release": "2025",
-  "date": "2025"
+  "date": "2025",
+  "type": "opensource",
+  "theme": "light",
+  "description": "Discord bot for managing contests and giveaways.",
+  "stack": [
+    "Discord.js"
+  ],
+  "order": 5
 }

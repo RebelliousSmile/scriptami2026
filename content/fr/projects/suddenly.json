@@ -4,5 +4,15 @@
   "link": "https://suddenly.social/",
   "release": "2026",
   "date": "2026",
-  "featured": true
+  "featured": true,
+  "type": "opensource",
+  "theme": "dark",
+  "description": "Nouvelle application pour le fédiverse pour créer de la narration partagée.",
+  "stack": [
+    "Python",
+    "Django",
+    "PostgreSQL",
+    "Docker"
+  ],
+  "order": 2
 }

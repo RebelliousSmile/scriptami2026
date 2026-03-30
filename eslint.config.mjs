@@ -10,3 +10,8 @@ export default createConfigForNuxt({
       'vue/multi-word-component-names': 'off',
     },
   })
+  .override('nuxt/nuxt/rules', {
+    rules: {
+      'nuxt/nuxt-config-keys-order': 'off',
+    },
+  })

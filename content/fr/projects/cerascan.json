@@ -3,5 +3,14 @@
   "image": "/projects/cerascan.jpg",
   "link": "https://mes-tarifs.com/",
   "release": "2025",
-  "date": "2025"
+  "date": "2025",
+  "type": "client",
+  "theme": "dark",
+  "description": "Application pour les showrooms de carrelage, permet d'anonymiser les références et les prix des carralages, en générant des qrcodes pour tous les produits de votre catalogue. Application à disposition des vendeurs pour renseigner les clients dans le showroom.",
+  "stack": [
+    "Alpine.js",
+    "Node.js",
+    "JavaScript"
+  ],
+  "order": 1
 }

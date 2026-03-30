@@ -3,5 +3,12 @@
   "image": "/projects/onet.webp",
   "link": "#",
   "release": "2025",
-  "date": "2025"
+  "date": "2025",
+  "type": "client",
+  "description": "Business application for the ONET group.",
+  "stack": [
+    "JavaScript",
+    "Balena"
+  ],
+  "order": 5
 }

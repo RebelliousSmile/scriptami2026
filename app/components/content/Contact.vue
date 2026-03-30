@@ -6,7 +6,8 @@ const { profile } = useAppConfig()
 const { t } = useI18n()
 const localePath = useLocalePath()
 
-const isResendEnabled = useRuntimeConfig().public.resend
+const resendApiKey = useRuntimeConfig().public.resendApiKey
+const isResendEnabled = !!resendApiKey
 
 const state = ref({
   email: '',
@@ -49,13 +50,28 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   try {
     const projectLabel = projectTypeOptions.value.find(o => o.value === state.value.project_type)?.label
     const budgetLabel = budgetOptions.value.find(o => o.value === state.value.budget)?.label
-    await $fetch('/api/emails/send', {
+    await $fetch('https://api.resend.com/emails', {
       method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${resendApiKey}`,
+        'Content-Type': 'application/json',
+      },
       body: {
-        ...event.data,
-        phone: state.value.phone,
-        budget: budgetLabel || state.value.budget,
-        project_type: projectLabel || state.value.project_type,
+        from: 'Scriptami <ecrire.a@scriptami.com>',
+        to: ['ecrire.a@scriptami.com'],
+        subject: `Demande de devis — ${projectLabel ?? 'Non précisé'}`,
+        html: `
+          <p>Nouvelle demande de devis reçue depuis scriptami.com.</p>
+          <ul>
+            <li><strong>Nom :</strong> ${event.data.fullname}</li>
+            <li><strong>Email :</strong> ${event.data.email}</li>
+            <li><strong>Téléphone :</strong> ${state.value.phone || 'Non renseigné'}</li>
+            <li><strong>Type de projet :</strong> ${projectLabel || 'Non précisé'}</li>
+            <li><strong>Budget envisagé :</strong> ${budgetLabel || 'Non précisé'}</li>
+          </ul>
+          <p><strong>Description du projet :</strong></p>
+          <p>${event.data.message.replace(/\n/g, '<br>')}</p>
+        `,
       },
     })
     await navigateTo(localePath('/merci'))

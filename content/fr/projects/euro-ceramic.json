@@ -1,0 +1,14 @@
+{
+  "name": "Euro Ceramic",
+  "image": "/projects/euro-ceramic.jpg",
+  "link": "https://euro-ceramic.fr",
+  "release": "2025",
+  "date": "2025",
+  "type": "client",
+  "theme": "light",
+  "description": "Carrelage consultatif de carrelage et céramique pour le showroom, permet d'indiquer les références et les prix voulues et de demander un devis en ligne.",
+  "stack": [
+    "PrestaShop 8"
+  ],
+  "order": 5
+}

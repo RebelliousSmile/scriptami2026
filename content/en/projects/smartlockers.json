@@ -3,5 +3,14 @@
   "image": "/projects/smartlockers.jpg",
   "link": "https://www.smartlockers.io/",
   "release": "2021",
-  "date": "2021"
+  "date": "2021",
+  "type": "client",
+  "theme": "light",
+  "description": "Configurator and showcase website for smart connected lockers.",
+  "stack": [
+    "PHP",
+    "JavaScript",
+    "Docker"
+  ],
+  "order": 2
 }

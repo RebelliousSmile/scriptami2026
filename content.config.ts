@@ -22,6 +22,11 @@ const commonProjectSchema = z.object({
   link: z.string().nonempty(),
   release: z.string().nonempty(),
   date: z.string().nonempty(),
+  order: z.number().default(0),
+  description: z.string().optional(),
+  stack: z.array(z.string()).optional(),
+  type: z.enum(['client', 'opensource']).default('client'),
+  theme: z.enum(['dark', 'light']).default('dark'),
   featured: z.boolean().optional(),
 })
 

@@ -3,5 +3,13 @@
   "image": "/projects/jeveuxtravailler.jpg",
   "link": "https://www.jeveuxtravailler.com/",
   "release": "2025",
-  "date": "2025"
+  "date": "2025",
+  "type": "client",
+  "theme": "dark",
+  "description": "Platform connecting candidates with companies.",
+  "stack": [
+    "Nuxt",
+    "Firebase"
+  ],
+  "order": 3
 }

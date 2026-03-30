@@ -3,5 +3,12 @@
   "image": "/projects/onet.webp",
   "link": "#",
   "release": "2025",
-  "date": "2025"
+  "date": "2025",
+  "type": "client",
+  "description": "Développement d'une application de mise à disposition des matériels via des casiers connectés pour ONET.",
+  "stack": [
+    "JavaScript",
+    "Balena"
+  ],
+  "order": 5
 }

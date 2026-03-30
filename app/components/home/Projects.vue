@@ -1,45 +1,46 @@
 <script setup lang="ts">
 import type { Collections } from '@nuxt/content'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const localePath = useLocalePath()
 
-const { data: projects } = await useAsyncData('projects', async () => {
+const { data: projects } = await useAsyncData('home-projects', async () => {
   const collection = ('projects_' + locale.value) as keyof Collections
-  return await queryCollection(collection).order('date', 'DESC').all() as Collections['projects_en'][] | Collections['projects_fr'][]
+  return await queryCollection(collection).order('order', 'ASC').all() as Collections['projects_en'][] | Collections['projects_fr'][]
 }, {
   watch: [locale],
 })
+
+const clientCount = computed(() => projects.value?.filter(p => p.type !== 'opensource').length ?? 0)
+const opensourceCount = computed(() => projects.value?.filter(p => p.type === 'opensource').length ?? 0)
 </script>
 
 <template>
   <div class="flex w-full flex-col gap-6">
-    <h3 class="font-newsreader italic text-white-shadow text-xl">
-      {{ $t("navigation.works") }}
-    </h3>
-    <div class="flex w-full flex-col gap-4">
-      <NuxtLink
-        v-for="project in projects?.filter((work) => work.featured)"
-        :key="project.name"
-        role="link"
-        class="flex cursor-pointer items-center gap-2 rounded-lg px-4 py-2 hover:bg-neutral-900"
-        :to="project.release === 'soon' ? localePath('/') : project.link"
-        :aria-label="'go to ' + project.name + ' project website'"
-        :target="project.release === 'soon' ? '_self' : '_blank'"
+    <NuxtLink
+      :to="localePath('/works')"
+      class="group relative flex overflow-hidden rounded-lg border border-white/10 bg-zinc-900/80 p-6 transition-colors hover:bg-zinc-800/80"
+    >
+      <img
+        src="/logos/picto-scriptami.svg"
+        alt=""
+        aria-hidden="true"
+        class="pointer-events-none absolute -right-4 -bottom-4 h-32 opacity-10 transition-opacity group-hover:opacity-20"
       >
-        <span class="whitespace-nowrap font-medium">
-          {{ project.name }}
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-4 text-sm text-muted">
+          <span>{{ clientCount }} {{ t('global.client_projects').toLowerCase() }}</span>
+          <span class="text-white/20">·</span>
+          <span>{{ opensourceCount }} {{ t('global.opensource_projects').toLowerCase() }}</span>
+        </div>
+        <span class="inline-flex items-center gap-2 text-sm font-medium text-white/90 transition-colors group-hover:text-white">
+          {{ $t("global.see_more") }}
+          <UIcon
+            name="heroicons:arrow-right"
+            class="size-4 transition-transform group-hover:translate-x-1"
+          />
         </span>
-        <div class="mx-2 h-[0.1px] w-full bg-muted" />
-        <span class="whitespace-nowrap">
-          {{ project.release === "soon" ? $t("global.soon") + "..." : project.release }}
-        </span>
-      </NuxtLink>
-    </div>
-    <NuxtLinkLocale to="/works">
-      <span class="font-newsreader italic text-white-shadow cursor-pointer">
-        {{ $t("global.see_more") }}
-      </span>
-    </NuxtLinkLocale>
+      </div>
+    </NuxtLink>
   </div>
 </template>

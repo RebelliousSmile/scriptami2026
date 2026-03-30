@@ -9,7 +9,7 @@
   "search": "Rechercher une commande",
   "command": "Commandes disponibles",
   "not_found": "Aucune commande trouvée",
-  "see_more": "Voir plus",
+  "see_more": "Serez-vous le prochain ?",
   "soon": "Bientôt disponible",
   "experiences": "Parcours professionnel",
   "contact": "Prenons contact",
@@ -19,5 +19,7 @@
   "available" : "Disponible pour de nouvelles opportunités",
   "unavailable" : "Actuellement en train de travailler sur d'autres projet génial",
   "all_rights_reserved": "Tous droits réservés",
-  "legal_notice": "Mentions légales"
+  "legal_notice": "Mentions légales",
+  "client_projects": "Projets clients",
+  "opensource_projects": "Projets open source"
 }

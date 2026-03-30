@@ -1,0 +1,15 @@
+{
+  "name": "Moodboard",
+  "image": "/projects/moodboard.jpg",
+  "link": "https://moodboard.scriptami.com",
+  "release": "2026",
+  "date": "2026",
+  "type": "opensource",
+  "theme": "light",
+  "description": "Transforme une liste d'images d'inspiration en PDF, en conjonction avec un chat IA.",
+  "stack": [
+    "Nuxt",
+    "Tailwind CSS"
+  ],
+  "order": 4
+}

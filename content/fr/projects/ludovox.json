@@ -3,5 +3,12 @@
   "image": "/projects/ludovox.jpg",
   "link": "https://ludovox.fr/",
   "release": "2018",
-  "date": "2018"
+  "date": "2018",
+  "type": "client",
+  "theme": "light",
+  "description": "Développement thèmes et extension pour le site de jeux de société Ludovox.",
+  "stack": [
+    "WordPress"
+  ],
+  "order": 8
 }

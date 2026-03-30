@@ -4,5 +4,11 @@
   "link": "https://lyremember.app/",
   "release": "2026",
   "date": "2026",
-  "featured": true
+  "featured": true,
+  "type": "opensource",
+  "description": "Application for memorizing musical discoveries.",
+  "stack": [
+    "Rust"
+  ],
+  "order": 3
 }

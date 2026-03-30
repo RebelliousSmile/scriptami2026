@@ -3,5 +3,12 @@
   "image": "/projects/kelenaya.jpg",
   "link": "https://kelenaya.fr/",
   "release": "2025",
-  "date": "2025"
+  "date": "2025",
+  "type": "client",
+  "description": "Showcase website for Kelenaya.",
+  "stack": [
+    "PrestaShop 1.7/8.2"
+  ],
+  "order": 4,
+  "theme": "light"
 }

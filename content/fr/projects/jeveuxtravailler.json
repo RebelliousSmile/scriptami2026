@@ -3,5 +3,13 @@
   "image": "/projects/jeveuxtravailler.jpg",
   "link": "https://www.jeveuxtravailler.com/",
   "release": "2025",
-  "date": "2025"
+  "date": "2025",
+  "type": "client",
+  "theme": "dark",
+  "description": "Plateforme de mise en relation entre candidats et entreprises.",
+  "stack": [
+    "Nuxt",
+    "Firebase"
+  ],
+  "order": 3
 }

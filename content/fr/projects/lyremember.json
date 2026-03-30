@@ -4,5 +4,11 @@
   "link": "https://lyremember.app/",
   "release": "2026",
   "date": "2026",
-  "featured": true
+  "featured": true,
+  "type": "opensource",
+  "description": "Sauvegardez vos lyrics en de multiples langues, apprenez-les en vous amusant.",
+  "stack": [
+    "Rust"
+  ],
+  "order": 3
 }

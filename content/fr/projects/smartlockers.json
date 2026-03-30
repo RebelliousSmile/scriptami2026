@@ -3,5 +3,14 @@
   "image": "/projects/smartlockers.jpg",
   "link": "https://www.smartlockers.io/",
   "release": "2021",
-  "date": "2021"
+  "date": "2021",
+  "type": "client",
+  "theme": "light",
+  "description": "Développements multiples pour SmartLOCKERS, le leader du casier connecté personnalisé en France, assemblé sur place et avec des matériaux les plus proches possibles. API, webapp, application embarquée, back office, etc.",
+  "stack": [
+    "PHP",
+    "JavaScript",
+    "Docker"
+  ],
+  "order": 2
 }

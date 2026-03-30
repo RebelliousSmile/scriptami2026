@@ -4,5 +4,12 @@
   "link": "https://email2markdown.app/",
   "release": "2026",
   "date": "2026",
-  "featured": true
+  "featured": true,
+  "type": "opensource",
+  "description": "Exportez vos maisl en une arborescence de fichiers Markdown propre et structurée. Méthode Inbox Zéro, triez tous vos contenus emails en différentes étapes, conservez l'essentiel, supprimer le reste, gardez l'esprit tranquille.",
+  "stack": [
+    "Rust"
+  ],
+  "order": 1,
+  "theme": "light"
 }

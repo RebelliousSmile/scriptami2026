@@ -18,10 +18,6 @@ export default defineNuxtConfig({
     ],
   },
 
-  devtools: {
-    enabled: true,
-  },
-
   css: ['~/assets/style/main.css'],
 
   site: {
@@ -49,10 +45,9 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      resend: !!process.env.NUXT_PRIVATE_RESEND_API_KEY,
+      resendApiKey: process.env.NUXT_PUBLIC_RESEND_API_KEY || '',
     },
   },
-
 
   experimental: {
     viewTransition: true,
@@ -61,10 +56,21 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-05',
 
   nitro: {
+    minify: false,
+    logLevel: 5,
+    rollupConfig: {
+      treeshake: false,
+    },
     prerender: {
-      autoSubfolderIndex: false,
       crawlLinks: true,
       routes: ['/en', '/fr'],
+      ignore: ['/_ipx/', '/_og-image/'],
+    },
+  },
+
+  vite: {
+    build: {
+      sourcemap: false,
     },
   },
 
@@ -108,17 +114,21 @@ export default defineNuxtConfig({
     provider: 'iconify',
   },
 
-  ogImage: {
-    zeroRuntime: true,
+  linkChecker: {
+    enabled: false,
   },
 
-  sitemap: {
-    strictNuxtContentPaths: true,
+  ogImage: {
+    enabled: false,
   },
+
 
   robots: {
     disallow: [],
     allow: '/',
   },
 
+  sitemap: {
+    strictNuxtContentPaths: true,
+  },
 })

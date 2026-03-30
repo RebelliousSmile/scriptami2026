@@ -4,5 +4,13 @@
   "link": "https://cabinet-partage.fr/",
   "release": "2024",
   "date": "2024",
-  "featured": true
+  "featured": true,
+  "type": "client",
+  "theme": "light",
+  "description": "Booking platform for shared medical offices for healthcare professionals in Savoie and Haute-Savoie.",
+  "stack": [
+    "Nuxt",
+    "PostgreSQL"
+  ],
+  "order": 6
 }
